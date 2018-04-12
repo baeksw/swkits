@@ -1,8 +1,8 @@
-
+# https://docs.python.org/3/distutils/setupscript.html
 try:
     from setuptools import setup
 except:
-    from  distutils.core import setup
+    from distutils.core import setup
 
 
 dependencies = [ 'docopt', 'termcolor' ]
@@ -18,6 +18,7 @@ setup(
     packages=['racks'],
     package_dir={'racks' : 'racks'},
     package_data={'racks' : ['data/*.dat'] },
+    data_files = [],
     entry_points={
         'console_scripts': [
             'racks=racks.main:start'
