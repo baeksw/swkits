@@ -16,6 +16,8 @@ setup(
     author_email='dohaskell7@gmail.com',
     install_requires=dependencies,
     packages=['racks'],
+    package_dir={'racks' : 'racks'},
+    package_data={'racks' : ['data/*.dat'] },
     entry_points={
         'console_scripts': [
             'racks=racks.main:start'
