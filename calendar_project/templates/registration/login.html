@@ -1,0 +1,72 @@
+{% extends 'registration/base.html' %}
+
+{% block content %}
+    <div class="loginColumns animated fadeInDown">
+        <div class="row">
+
+
+            <div class="col-md-12 m-t">
+            </div>
+            <div class="col-md-6">
+                <h2 class="font-bold">Welcome to EMS+</h2>
+
+                <p>
+                    Energy Storage Service Management Solution!
+                </p>
+
+
+                <p>
+                    <small>all about the Energy Things.</small>
+                </p>
+
+            </div>
+            <div class="col-md-6">
+                <div class="ibox-content">
+                    <form class="m-t" role="form" method="POST">
+                            {% csrf_token %} 
+                            {% for field in form %}
+                    <div class="form-group">
+                                <label>{{field.label}}</label>
+                                
+                                <input placeholder="{{field.label}}" type="{{field.field.widget.input_type}}"  name="{{field.name}}" class="form-control"/>
+                                {% if field.errors %}
+                                    <span class="help-block">{{ field.errors.0 }} </span>
+                                {% endif %}
+                    </div>
+                            {% endfor %}
+<!--
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Username" required="">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Password" required="">
+                        </div>
+-->
+                        <button type="submit" class="btn btn-primary block full-width m-b">Login</button>
+
+                        <a href="/static/#">
+                            <small>Forgot password?</small>
+                        </a>
+
+                        <p class="text-muted text-center">
+                            <small>Do not have an account?</small>
+                        </p>
+                        <a class="btn btn-sm btn-white btn-block" href="/register.html">Create an account</a>
+                    </form>
+                    <p class="m-t hide">
+                        <small>Inspinia we app framework base on Bootstrap 3 &copy; 2014</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr/>
+        <div class="row">
+            <div class="col-md-6">
+                Copyright NS-ENG - Seoul, South Korea
+            </div>
+            <div class="col-md-6 text-right">
+               <small>© 2017-2018</small>
+            </div>
+        </div>
+    </div>
+{% endblock %}
