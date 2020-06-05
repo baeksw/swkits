@@ -13,7 +13,7 @@ configobj==5.0.6
 cookiecutter==1.6.0
 cryptography==2.2.2
 curtsies==0.3.0
-Django==2.0.4
+Django==2.2.13
 django-bootstrap4==0.0.6
 django-filter==1.1.0
 django-macros==0.4.0
