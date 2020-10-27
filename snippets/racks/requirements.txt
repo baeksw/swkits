@@ -11,7 +11,7 @@ cli-helpers==1.0.2
 click==6.7
 configobj==5.0.6
 cookiecutter==1.6.0
-cryptography==2.2.2
+cryptography==3.2
 curtsies==0.3.0
 Django==2.0.4
 django-bootstrap4==0.0.6
