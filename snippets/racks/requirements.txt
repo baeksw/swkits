@@ -50,7 +50,7 @@ nose-run-line-number==0.0.1
 poyo==0.4.1
 prompt-toolkit==1.0.15
 pycparser==2.18
-Pygments==2.2.0
+Pygments==2.7.4
 PyMySQL==0.8.0
 pyodbc==4.0.23
 python-dateutil==2.7.2
