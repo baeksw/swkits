@@ -4,7 +4,7 @@ binaryornot==0.4.4
 blessings==1.6.1
 bpython==0.17.1
 business-rules==1.0.1
-certifi==2018.1.18
+certifi==2022.12.7
 cffi==1.11.5
 chardet==3.0.4
 cli-helpers==1.0.2
